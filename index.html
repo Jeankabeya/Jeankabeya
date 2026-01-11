@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aigle Consult | Conseil & Solutions Professionnelles</title>
 <style>
+  .lang-switch {
+  display: flex;
+  gap: 5px;           /* väli FR ja EN välillä */
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;   /* siirtää oikealle */
+  color: #ffffff;      /* valkoinen teksti */
+}
+.lang-switch span:hover {
+  text-decoration: underline; /* pieni hover-efekti, voi poistaa jos haluat */
+}
+
 /* --- Yleiset tyylit --- */
 body {margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#1f2937;background:#f9fafb;}
 nav {background:#0f172a;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
@@ -32,21 +44,21 @@ form p{margin:0 0 10px 0;}
 <!-- Navigation -->
 <nav>
 <nav>
-  <strong>Aigle Consult</strong>
-  <div>
+ <nav>
+  <strong style="color:white;">Aigle Consult</strong>
+  <div style="display:flex;align-items:center;width:100%;">
     <a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
     <a href="#services" data-fr="Services" data-en="Services">Services</a>
     <a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
     <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
 
-    <!-- FR/EN tekstit -->
-    <div style="display:flex;align-items:center;margin-left:10px;">
-      <span onclick="setLang('fr')" style="font-weight:bold; cursor:pointer; margin-right:5px;">FR</span>
-      <span onclick="setLang('en')" style="font-weight:bold; cursor:pointer;">EN</span>
+    <!-- FR/EN oikeassa yläkulmassa valkoisena -->
+    <div class="lang-switch">
+      <span onclick="setLang('fr')">FR</span>
+      <span onclick="setLang('en')">EN</span>
     </div>
   </div>
 </nav>
-
 
 
 
@@ -159,6 +171,7 @@ function setLang(lang){
 
 </body>
 </html>
+
 
 
 
