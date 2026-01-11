@@ -1,27 +1,71 @@
-<h2 data-fr="Nos services" data-en="Our Services">Nos services</h2>
-<div class="card">
-  <h3 data-fr="Orientation académique" data-en="Academic Guidance">Orientation académique</h3>
-  <p data-fr="Conseil personnalisé pour aider les étudiants à choisir des universités et des formations adaptées à leur profil."
-     data-en="Personalized advice to help students choose universities and courses suitable for their profile.">
-  Conseil personnalisé pour aider les étudiants à choisir des universités et des formations adaptées à leur profil.
-  </p>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aigle Consult | Conseil & Solutions Professionnelles</title>
+<style>
+/* --- Yleiset tyylit --- */
+body {margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#1f2937;background:#f9fafb;}
+nav {background:#0f172a;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+nav strong {color:#fff;font-size:1.2rem;}
+nav a {color:#e5e7eb;margin-left:1rem;text-decoration:none;font-weight:500;}
+nav a:hover{text-decoration:underline;}
+nav .flags {display:flex;align-items:center;margin-left:10px;}
+header {background:linear-gradient(135deg,#1e3a8a,#2563eb);color:white;padding:5rem 2rem;text-align:center;}
+header h1{font-size:2.8rem;margin-bottom:1rem;}
+header p{font-size:1.25rem;max-width:700px;margin:auto;}
+section{padding:4rem 2rem;max-width:1100px;margin:auto;}
+h2{text-align:center;margin-bottom:3rem;font-size:2rem;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;}
+.card{background:white;border-radius:14px;padding:2rem;box-shadow:0 15px 30px rgba(0,0,0,0.08);}
+.card h3{margin-top:0;color:#1e40af;}
+.about{background:#fff;border-radius:14px;padding:3rem;box-shadow:0 10px 25px rgba(0,0,0,0.06);}
+footer{background:#0f172a;color:#9ca3af;text-align:center;padding:2rem;}
+button{background:#2563eb;color:white;border:none;padding:0.9rem 2rem;border-radius:999px;font-size:1rem;cursor:pointer;}
+button:hover{background:#1d4ed8;}
+input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;}
+form p{margin:0 0 10px 0;}
+.flag {width:24px;height:16px;border-radius:2px;cursor:pointer;margin-left:5px;border:1px solid #aaa;}
+.flag:hover {transform:scale(1.1);transition:0.2s;}
+</style>
+</head>
+<body>
 
+<!-- Navigation -->
+<nav>
+<strong>Aigle Consult</strong>
+<div>
+<a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
+<a href="#services" data-fr="Services" data-en="Services">Services</a>
+<a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+<a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+
+<!-- Liput -->
+<div class="flags">
+<!-- Ranska -->
+<span class="flag" onclick="setLang('fr')" style="background:linear-gradient(to right,#0055A4,#FFFFFF,#EF4135);"></span>
+<!-- Iso-Britannia yksinkertaistettu -->
+<span class="flag" onclick="setLang('en')" style="background:linear-gradient(to right,#CF142B,#FFFFFF,#00247D);"></span>
+</div>
+</div>
+</nav>
+
+<!-- Header -->
 <header>
 <h1 data-fr="Aigle Consult – Solutions professionnelles adaptées à vos besoins"
     data-en="Aigle Consult – Professional solutions tailored to your needs">
 Aigle Consult – Solutions professionnelles adaptées à vos besoins
 </h1>
-
 <p data-fr="Agence basée à Kinshasa (RDC), nous accompagnons les étudiants dans leurs démarches pour intégrer des universités partenaires en Europe."
    data-en="Agency based in Kinshasa (DRC), we support students in joining partner universities in Europe.">
 Agence basée à Kinshasa (RDC), nous accompagnons les étudiants dans leurs démarches pour intégrer des universités partenaires en Europe.
 </p>
-
 <br>
 <button data-fr="Demander un devis" data-en="Request a quote">Demander un devis</button>
 </header>
 
+<!-- Services -->
 <section id="services">
 <h2 data-fr="Nos services" data-en="Our Services">Nos services</h2>
 <div class="cards">
@@ -49,6 +93,7 @@ Nous accompagnons les étudiants vers des universités en France, Belgique, Grè
 </div>
 </section>
 
+<!-- About -->
 <section id="apropos">
 <h2 data-fr="À propos de Aigle Consult" data-en="About Aigle Consult">À propos de Aigle Consult</h2>
 <div class="about">
@@ -63,6 +108,7 @@ Grâce à nos partenariats avec plusieurs universités européennes, nous facili
 </div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
 <h2 data-fr="Contact & inscription" data-en="Contact & Registration">Contact & inscription</h2>
 <div class="about">
@@ -85,6 +131,32 @@ Vous souhaitez étudier en Europe ? Remplissez le formulaire ci-dessous et notre
 </p>
 </div>
 </section>
+
+<!-- WhatsApp ja Facebook kelluvat napit -->
+<a href="https://wa.me/243827704694" target="_blank"
+   style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
+   padding:15px 20px;border-radius:999px;text-decoration:none;font-weight:bold;
+   box-shadow:0 10px 20px rgba(0,0,0,0.2);z-index:1000;">WhatsApp</a>
+<a href="https://www.facebook.com/aigleconsult/" target="_blank"
+   style="position:fixed;bottom:80px;right:20px;background:#1877F2;color:white;
+   padding:15px 20px;border-radius:999px;text-decoration:none;font-weight:bold;
+   box-shadow:0 10px 20px rgba(0,0,0,0.2);z-index:1000;">Facebook</a>
+
+<footer>
+<p>© 2026 – Aigle Consult. Tous droits réservés.</p>
+</footer>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-fr]').forEach(el=>{
+    el.textContent = el.getAttribute('data-'+lang);
+  });
+}
+</script>
+
+</body>
+</html>
+
 
 
 
