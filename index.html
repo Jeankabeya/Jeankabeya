@@ -26,31 +26,52 @@ input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;
 form p{margin:0 0 10px 0}
 </style>
 </head>
-<body>
-
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+}
+</script>
+</body>
+</html>
 <nav>
 <strong>Aigle Consult</strong>
 <div>
-<a href="#">Accueil</a>
-<a href="#services">Services</a>
-<a href="#apropos">À propos</a>
-<a href="#contact">Contact</a>
+<a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
+<a href="#services" data-fr="Services" data-en="Services">Services</a>
+<a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+<a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+
+<button onclick="setLang('fr')" style="margin-left:15px;">FR</button>
+<button onclick="setLang('en')">EN</button>
 </div>
 </nav>
 
 <header>
-<h1>Aigle Consult – Solutions professionnelles adaptées à vos besoins</h1>
-<p>Agence basée à Kinshasa (RDC), nous accompagnons les étudiants dans leurs démarches pour intégrer des universités partenaires en Europe.</p>
+<h1 data-fr="Aigle Consult – Solutions professionnelles adaptées à vos besoins"
+    data-en="Aigle Consult – Professional solutions tailored to your needs">
+Aigle Consult – Solutions professionnelles adaptées à vos besoins
+</h1>
+
+<p data-fr="Agence basée à Kinshasa (RDC), nous accompagnons les étudiants dans leurs démarches pour intégrer des universités partenaires en Europe."
+   data-en="Agency based in Kinshasa (DRC), we support students in their process of joining partner universities in Europe.">
+Agence basée à Kinshasa (RDC), nous accompagnons les étudiants dans leurs démarches pour intégrer des universités partenaires en Europe.
+</p>
+
 <br>
-<button>Demander un devis</button>
+<button data-fr="Demander un devis" data-en="Request a quote">Demander un devis</button>
 </header>
 
+
 <section id="services">
-<h2>Nos services</h2>
-<div class="cards">
+<h2 data-fr="Nos services" data-en="Our Services">Nos services</h2>
 <div class="card">
-<h3>Orientation académique</h3>
-<p>Conseil personnalisé pour aider les étudiants à choisir des universités et des formations adaptées à leur profil.</p>
+  <h3 data-fr="Orientation académique" data-en="Academic Guidance">Orientation académique</h3>
+  <p data-fr="Conseil personnalisé pour aider les étudiants à choisir des universités et des formations adaptées à leur profil."
+     data-en="Personalized advice to help students choose universities and courses suitable for their profile.">
+  Conseil personnalisé pour aider les étudiants à choisir des universités et des formations adaptées à leur profil.
+  </p>
 </div>
 <div class="card">
 <h3>Accompagnement des démarches</h3>
@@ -111,6 +132,7 @@ form p{margin:0 0 10px 0}
 
 </body>
 </html>
+
 
 
 
