@@ -11,7 +11,6 @@ nav {background:#0f172a;padding:1rem 2rem;display:flex;justify-content:space-bet
 nav strong {color:#fff;font-size:1.2rem;}
 nav a {color:#e5e7eb;margin-left:1rem;text-decoration:none;font-weight:500;}
 nav a:hover{text-decoration:underline;}
-nav .flags {display:flex;align-items:center;margin-left:10px;}
 header {background:linear-gradient(135deg,#1e3a8a,#2563eb);color:white;padding:5rem 2rem;text-align:center;}
 header h1{font-size:2.8rem;margin-bottom:1rem;}
 header p{font-size:1.25rem;max-width:700px;margin:auto;}
@@ -26,27 +25,31 @@ button{background:#2563eb;color:white;border:none;padding:0.9rem 2rem;border-rad
 button:hover{background:#1d4ed8;}
 input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;}
 form p{margin:0 0 10px 0;}
-.flag {width:24px;height:16px;border-radius:2px;cursor:pointer;margin-left:5px;border:1px solid #aaa;}
-.flag:hover {transform:scale(1.1);transition:0.2s;}
 </style>
 </head>
 <body>
 
 <!-- Navigation -->
 <nav>
-<strong>Aigle Consult</strong>
-<div>
-<a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
-<a href="#services" data-fr="Services" data-en="Services">Services</a>
-<a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
-<a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+<nav>
+  <strong>Aigle Consult</strong>
+  <div>
+    <a href="#" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="#services" data-fr="Services" data-en="Services">Services</a>
+    <a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+    <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
 
-<!-- Liput -->
-<div class="flags">
-<!-- Ranska -->
-<span class="flag" onclick="setLang('fr')" style="background:linear-gradient(to right,#0055A4,#FFFFFF,#EF4135);"></span>
-<!-- Iso-Britannia yksinkertaistettu -->
-<span class="flag" onclick="setLang('en')" style="background:linear-gradient(to right,#CF142B,#FFFFFF,#00247D);"></span>
+    <!-- FR/EN tekstit -->
+    <div style="display:flex;align-items:center;margin-left:10px;">
+      <span onclick="setLang('fr')" style="font-weight:bold; cursor:pointer; margin-right:5px;">FR</span>
+      <span onclick="setLang('en')" style="font-weight:bold; cursor:pointer;">EN</span>
+    </div>
+  </div>
+</nav>
+
+
+
+
 </div>
 </div>
 </nav>
@@ -156,6 +159,7 @@ function setLang(lang){
 
 </body>
 </html>
+
 
 
 
