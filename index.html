@@ -282,19 +282,35 @@ footer {
       data-fr="Si vous souhaitez poursuivre vos études en Europe, veuillez remplir le formulaire ci-dessous et un membre de notre équipe vous contactera."
       data-en="If you are interested in pursuing your studies in Europe, please complete the form below and a member of our team will contact you.">
     </p>
+<form action="https://formspree.io/f/mlggrgew" method="POST">
+  <p>
+    <input type="text" name="name" placeholder="Nom complet / Full name" required>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Email" required>
+  </p>
+  <p>
+    <input type="text" name="country" placeholder="Pays d'étude souhaité">
+  </p>
+  <p>
+    <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+  </p>
+  <button type="submit" data-fr="Envoyer la demande" data-en="Submit Request">
+    Envoyer la demande
+  </button>
+</form>
 
-    <form>
-      <input type="text" placeholder="Nom complet / Full name">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Message"></textarea>
-      <button data-fr="Envoyer la demande" data-en="Submit Request">Envoyer la demande</button>
-    </form>
+
 
     <p style="margin-top:30px;">
-      <strong data-fr="Localisation :" data-en="Location:">Localisation :</strong> Kinshasa, RDC<br>
-      <strong>E-mail:</strong> contact@aigleconsult.net<br>
-      <strong data-fr="Téléphone :" data-en="Phone:">Téléphone :</strong> +243 827 704 694
-    </p>
+  <strong data-fr="Localisation :" data-en="Location:">Localisation :</strong> Kinshasa, RDC<br>
+
+  <strong>E-mail:</strong>
+  <a href="mailto:contact@aigleconsult.net">contact@aigleconsult.net</a><br>
+
+  <strong data-fr="Téléphone :" data-en="Phone:">Téléphone :</strong>
+  <a href="tel:+243827704694">+243 827 704 694</a>
+</p>
   </div>
 </section>
 
@@ -309,8 +325,8 @@ footer {
   <a href="https://wa.me/243827704694" title="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <a href="#" title="Facebook">
-    <i class="fab fa-facebook-f"></i>
+  <a href="https://www.facebook.com/YourPageNameHere" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>>
   </a>
 </div>
 
@@ -325,3 +341,4 @@ setLang('fr');
 
 </body>
 </html>
+
