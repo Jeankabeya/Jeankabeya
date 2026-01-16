@@ -33,9 +33,13 @@ body {
 
 header { background: var(--wine-dark); color:white; }
 .nav {
-  display:flex; justify-content:space-between; align-items:center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   padding:18px 0;
+  height:100%;
 }
+
 
 .logo {
   display:flex;
@@ -46,9 +50,9 @@ header { background: var(--wine-dark); color:white; }
 }
 
 .logo img {
-  height:130px;   /* isompi logo */
-  width:auto;
-  display:block;
+  height: 130px;
+  max-height: 100%;
+  width: auto;
 }
 
 
@@ -188,7 +192,19 @@ footer {
   background:var(--wine-dark);
   color:white;
   font-size:18px;
-  box-shadow:0 6px 14px rgba(0,0,0,.25);
+   box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
+  @media (max-width: 600px) {
+  header {
+    height: 70px;
+  }
+
+  .logo img {
+    height: 80px;
+    transform: none;
+  }
+}
+
 }
 </style>
 </head>
@@ -300,6 +316,7 @@ setLang('fr');
 
 </body>
 </html>
+
 
 
 
